@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Кейпа](https://htmlacademy.ru/profile/id147815).
-* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
+* Наставник: [Никита :smiling_imp: Рогатнев](https://htmlacademy.ru/profile/id86119).
 
 ---
 
