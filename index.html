@@ -5,8 +5,171 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <section class="whole-content">
+      <header>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a class="logo" href="#"><img src="#" alt="home"></a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </header>
+      <section class="head">                                              <!--Надпись на картинке SEDONA etc. она часть изображения или фоном лежит?-->
+          <img src="http://placehold.it/150x100" width="100%" alt="sedona"> <!--Валидатор ругается на width="100%", хочет в пикселях, не пойму почему-->
+          <div class="head-caption">
+            <p><strong>
+              Седона - небольшой городок в аризоне, <br>
+              заслуживающий большего! <br>
+            </strong>
+              Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+            </p>
+          </div>
+      </section>
+      <section class="box-features">
+        <article class="box box-blue">
+          <div class="box-content">
+            <strong class="box-name">Настоящий городок</strong> <br>
+            <span>-№1-</span>
+            <p>
+              Седона - не аттракцион для туристов, <br>
+              там течет своя жизнь
+            </p>
+          </div>
+        </article>
+        <article class="box box-wide">
+          <img src="http://placehold.it/150x100" width="360" height="120" alt="pic">
+        </article>
+        <article class="box box-white">
+          <div class="box-content">
+            <img src="http://placehold.it/150x100" width="120" height="80" alt="pic">
+            <strong class="box-name">Жилье</strong>
+            <p>
+              Рекомендуем пожить в настоящем <br>
+              мотеле, все как в кино!
+            </p>
+          </div>
+        </article>
+        <article class="box box-white">
+          <div class="box-content">
+            <img src="http://placehold.it/150x100" width="120" height="80" alt="pic">
+            <strong class="box-name">Еда</strong>
+            <p>
+              Всегда заказывайте фирменный бургер, <br>
+              вы не разочаруетесь!
+            </p>
+          </div>
+        </article>
+        <article class="box box-white">
+          <div class="box-content">
+            <img src="http://placehold.it/150x100" width="120" height="80" alt="pic">
+            <strong class="box-name">Сувениры</strong>
+            <p>
+              Не только китайского, <br>
+              но и местного производства!
+            </p>
+          </div>
+        </article>
+        <article class="box box-wide">
+          <img src="http://placehold.it/150x100" width="360" height="120" alt="pic">
+        </article>
+        <article class="box box-blue">
+          <div class="box-content">
+            <strong class="box-name">
+              Там есть <br>
+              мост дьявола</strong> <br>
+            <span>-№2-</span>
+            <p>
+              Да, по нему можно пройти! <br>
+              Если конечно вы осмелитесь
+            </p>
+          </div>
+        </article>
+        <article class="box box-grey">
+          <div class="box-content">
+            <strong class="box-name">
+              Небольшая <br>
+              площадь</strong> <br>
+            <span>-№3-</span>
+            <p>
+              Все достопримечательности <br>
+              находятся очень близко
+            </p>
+          </div>
+        </article>
+        <article class="box box-grey">
+          <div class="box-content">
+            <strong class="box-name">
+              Красивая <br>
+              дорога</strong> <br>
+            <span>-№4-</span>
+            <p>
+              Ехать в Седону из Лас-Вегаса совсем <br>
+              не скучно!
+            </p>
+          </div>
+        </article>
+        <article class="box box-grey">
+          <div class="box-content">
+            <strong class="box-name">
+              Мало <br>
+              Туристов</strong> <br>
+            <span>-№5-</span>
+            <p>
+              Большинство едет в Гранд Каньон и <br>
+              толпится там
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="interest">
+        <div class="main-block">
+          <p><strong>Заинтересовались?</strong><br>
+            Укажите предпологаемые даты поездки, <br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <form class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
+            <div class="top-form">
+              <label><input type="button" value="Поиск гостиницы в Седоне"></label>
+            </div>
+            <div class="body-form">
+              <label for="come-in">Дата заезда:
+                <input type="text" name="date-in" id="come-in"> <br> <!--В спеке прочел что иконка календаря прикручивается как-то отдельно (?)-->
+              </label>
+              <label for="come-out">Дата выезда:
+                <input type="text" name="date-out" id="come-out"> <br>
+              </label>
+              <label for="adults">Взрослые:
+                <input type="text" name="adults" id="adults"> <br> <!--Не знаю как сделать числовой перебор + -, почитал про type="number" но там совсем по другому выходит или это через button делать?-->
+              </label>
+              <label for="childs">Дети:
+                <input type="text" name="childs" id="childs">
+              </label>
+            </div>
+            <div class="bottom-form">
+              <label><input type="submit" value="Найти"></label>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="map">
+        <iframe width="600" height="400" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7785.757369518063!2d-111.76400148179546!3d34.868292753181926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1453692109517">
+        </iframe>
+      </div>
+        <footer>
+          <div class="hash">
+            <a href="#">#visitsedona</a>
+          </div>
+          <div class="social-btn">
+            <a class="btn btn-tw" href="#"><img src="#" alt="twitter"></a>
+            <a class="btn btn-fb" href="#"><img src="#" alt="facebook"></a>
+            <a class="btn btn-yt" href="#"><img src="#" alt="youtube"></a>
+          </div>
+          <div class="made-by">
+            <span>Webssite by</span>
+            <a href="#"><img src="#" alt="html academy"></a>
+          </div>
+        </footer>
+    </section>
   </body>
 </html>
