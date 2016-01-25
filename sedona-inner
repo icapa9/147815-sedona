@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <section class="whole-content">
+      <header>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a class="logo" href="#"><img src="#" alt="home"></a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </header>
+      <section class="main-form">
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <div class="structure">
+            <span><strong>Инфраструктура:</strong></span> <br>
+            <label><input type="checkbox" checked>Бассейн</label><br>
+            <label><input type="checkbox">Парковка</label><br>
+            <label><input type="checkbox">WI-FI</label><br>
+          </div>
+          <div class="type-accomodation">
+            <span><strong>Тип жилья:</strong></span> <br>
+            <label><input type="checkbox" checked>Гостиница</label><br>
+            <label><input type="checkbox" checked>Мотель</label><br>
+            <label><input type="checkbox" checked>Аппартаменты</label><br>
+          </div>
+          <div class="range">
+            <span><strong>Стоимость в сутки(Р):</strong></span>
+            <table>
+              <tr>
+                <td>От 0</td>
+                <td>До 3000</td>
+              </tr>
+            </table>
+            <input type="range" min="0" max="10000"> <!--Надеюсь что range к таблице прикручивается где-нибудь в CSS =)-->
+            <input type="submit" value="Показать">
+          </div>
+        </form>
+      </section>
+      <section class="found-form">
+        <div class="found">
+          <span>Найдено:3</span>
+          <span>Сортировка:</span>
+          <ul>
+            <li><input type="button" value="по цене"></li> <!--Думаю здесь кнопки а не ссылки, так как сюда будут прикручивать сортировку-->
+            <li><input type="button" value="по типу"></li>
+            <li><input type="button" value="по рейтингу"></li>
+          </ul>
+        </div>
+        <div class="triangles">
+          <button class="triangle-up">
+            <img src="#" alt="up" />
+          </button>
+          <button class="triangle-down">
+            <img src="#" alt="down" />
+          </button>
+        </div>
+      </section>
+      <hr>
+      <section class="result-found">
+        <ul>
+          <li>
+            <div class="left-side">
+              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+              <h2>Amara Resort & SPA</h2> <br>
+              <span class="type">Гостиница</span>
+              <span class="min-cost">от 3500 Р.</span> <br>
+              <input class="more" type="button" value="Подробнее">
+              <input class="book" type="button" value="Забронировать">
+            </div>
+            <div class="right-side">
+              <img src="#" alt="rating" /> <br> <!--Спрайты?-->
+              <span class="rating">Рейтинг:8,5</span>
+            </div>
+            <hr> <!--Если hr оставить тут, то линия ведется от начала списка а не от начала экрана слева, но если hr расположить между li, то начинает ругаться валидатор, как быть?-->
+          </li>
+          <li>
+            <div class="left-side">
+              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+              <h2>Amara Resort & SPA</h2> <br>
+              <span class="type">Мотель</span>
+              <span class="min-cost">от 2000 Р.</span> <br>
+              <input class="more" type="button" value="Подробнее">
+              <input class="book" type="button" value="Забронировать">
+            </div>
+            <div class="right-side">
+              <img src="#" alt="rating" /> <br>
+              <span class="rating">Рейтинг:8,9</span>
+            </div>
+            <hr>
+          </li>
+          <li>
+            <div class="left-side">
+              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+              <h2>Villas at Poco Diablo</h2> <br>
+              <span class="type">Апартаменты</span>
+              <span class="min-cost">от 4000 Р.</span> <br>
+              <input class="more" type="button" value="Подробнее">
+              <input class="book" type="button" value="Забронировать">
+            </div>
+            <div class="right-side">
+              <img src="#" alt="rating" /> <br>
+              <span class="rating">Рейтинг:9,2</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+        <footer>
+          <div class="hash">
+            <a href="#">#visitsedona</a>
+          </div>
+          <div class="social-btn">
+            <a class="btn btn-tw" href="#"><img src="#" alt="twitter"></a>
+            <a class="btn btn-fb" href="#"><img src="#" alt="facebook"></a>
+            <a class="btn btn-yt" href="#"><img src="#" alt="youtube"></a>
+          </div>
+          <div class="made-by">
+            <span>Webssite by</span>
+            <a href="#"><img src="#" alt="html academy"></a>
+          </div>
+        </footer>
+    </section>
+  </body>
+</html>
