@@ -63,8 +63,7 @@
       </section>
       <hr>
       <section class="result-found">
-        <ul>
-          <li>
+          <div class="index-block">
             <div class="left-side">
               <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
               <h2>Amara Resort & SPA</h2> <br>
@@ -77,9 +76,9 @@
               <img src="#" alt="rating" /> <br> <!--Спрайты?-->
               <span class="rating">Рейтинг:8,5</span>
             </div>
-            <hr> <!--Если hr оставить тут, то линия ведется от начала списка а не от начала экрана слева, но если hr расположить между li, то начинает ругаться валидатор, как быть?-->
-          </li>
-          <li>
+          </div>
+          <hr>
+          <div class="index-block">
             <div class="left-side">
               <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
               <h2>Amara Resort & SPA</h2> <br>
@@ -92,9 +91,9 @@
               <img src="#" alt="rating" /> <br>
               <span class="rating">Рейтинг:8,9</span>
             </div>
-            <hr>
-          </li>
-          <li>
+          </div>
+          <hr>
+          <div class="index-block">
             <div class="left-side">
               <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
               <h2>Villas at Poco Diablo</h2> <br>
@@ -107,9 +106,9 @@
               <img src="#" alt="rating" /> <br>
               <span class="rating">Рейтинг:9,2</span>
             </div>
-          </li>
-        </ul>
+          </div>
       </section>
+      <hr>
         <footer>
           <div class="hash">
             <a href="#">#visitsedona</a>
