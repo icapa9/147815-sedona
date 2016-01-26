@@ -18,97 +18,107 @@
       <section class="main-form">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <div class="structure">
-            <span><strong>Инфраструктура:</strong></span> <br>
-            <label><input type="checkbox" checked>Бассейн</label><br>
-            <label><input type="checkbox">Парковка</label><br>
-            <label><input type="checkbox">WI-FI</label><br>
+            <h2>Инфраструктура:</h2>
+            <label><input type="checkbox" checked>Бассейн</label>
+            <label><input type="checkbox">Парковка</label>
+            <label><input type="checkbox">WI-FI</label>
           </div>
           <div class="type-accomodation">
-            <span><strong>Тип жилья:</strong></span> <br>
-            <label><input type="checkbox" checked>Гостиница</label><br>
-            <label><input type="checkbox" checked>Мотель</label><br>
-            <label><input type="checkbox" checked>Аппартаменты</label><br>
+            <h2>Тип жилья:</h2>
+            <label><input type="checkbox" checked>Гостиница</label>
+            <label><input type="checkbox" checked>Мотель</label>
+            <label><input type="checkbox" checked>Аппартаменты</label>
           </div>
           <div class="range">
-            <span><strong>Стоимость в сутки(Р):</strong></span>
-            <table>
-              <tr>
-                <td>От 0</td>
-                <td>До 3000</td>
-              </tr>
-            </table>
-            <input type="range" min="0" max="10000"> <!--Надеюсь что range к таблице прикручивается где-нибудь в CSS =)-->
+            <h2>Стоимость в сутки(Р):</h2>
+            <div>
+                <input type="text" name="min-cost" value="От 0">
+                <input type="text" name="max-cost" value="До 3000">
+            </div>
+            <input type="range" min="0" max="10000">
             <input type="submit" value="Показать">
           </div>
         </form>
       </section>
       <section class="found-form">
         <div class="found">
-          <span>Найдено:3</span>
+          <h2>Найдено:3</h2>
+        </div>
+        <div class="sort">
           <span>Сортировка:</span>
           <ul>
-            <li><input type="button" value="по цене"></li> <!--Думаю здесь кнопки а не ссылки, так как сюда будут прикручивать сортировку-->
-            <li><input type="button" value="по типу"></li>
-            <li><input type="button" value="по рейтингу"></li>
+            <li><a href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по рейтингу</a></li>
           </ul>
         </div>
         <div class="triangles">
-          <button class="triangle-up">
-            <img src="#" alt="up" />
-          </button>
-          <button class="triangle-down">
-            <img src="#" alt="down" />
-          </button>
+          <ul>
+            <li><a href="#">&#9650;</a></li>
+            <li><a href="#">&#9660;</a></li>
+          </ul>
         </div>
       </section>
-      <hr>
-      <section class="result-found">
-          <div class="index-block">
-            <div class="left-side">
-              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-              <h2>Amara Resort & SPA</h2> <br>
-              <span class="type">Гостиница</span>
-              <span class="min-cost">от 3500 Р.</span> <br>
-              <input class="more" type="button" value="Подробнее">
-              <input class="book" type="button" value="Забронировать">
-            </div>
-            <div class="right-side">
-              <img src="#" alt="rating" /> <br> <!--Спрайты?-->
-              <span class="rating">Рейтинг:8,5</span>
-            </div>
+      <article class="index-block">
+        <div class="photo">
+          <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+        </div>
+        <div class="name-block">
+          <h2>Amara Resort &amp; Spa</h2>
+          <div class="type">
+            <h4>Гостиница</h4>
+            <input class="more" type="button" value="Подробнее">
           </div>
-          <hr>
-          <div class="index-block">
-            <div class="left-side">
-              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-              <h2>Amara Resort & SPA</h2> <br>
-              <span class="type">Мотель</span>
-              <span class="min-cost">от 2000 Р.</span> <br>
-              <input class="more" type="button" value="Подробнее">
-              <input class="book" type="button" value="Забронировать">
-            </div>
-            <div class="right-side">
-              <img src="#" alt="rating" /> <br>
-              <span class="rating">Рейтинг:8,9</span>
-            </div>
+          <div class="min-cost">
+            <h4>от 3500 Р.</h4>
+            <input class="book" type="button" value="Забронировать">
           </div>
-          <hr>
-          <div class="index-block">
-            <div class="left-side">
-              <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
-              <h2>Villas at Poco Diablo</h2> <br>
-              <span class="type">Апартаменты</span>
-              <span class="min-cost">от 4000 Р.</span> <br>
-              <input class="more" type="button" value="Подробнее">
-              <input class="book" type="button" value="Забронировать">
-            </div>
-            <div class="right-side">
-              <img src="#" alt="rating" /> <br>
-              <span class="rating">Рейтинг:9,2</span>
-            </div>
+        </div>
+        <div class="raiting-block">
+          <img src="#" alt="rating">
+          <span class="rating">Рейтинг:8,5</span>
+        </div>
+      </article>
+      <article class="index-block">
+        <div class="photo">
+          <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+        </div>
+        <div class="name-block">
+          <h2>Desert Quail Inn</h2>
+          <div class="type">
+            <h4>Мотель</h4>
+            <input class="more" type="button" value="Подробнее">
           </div>
-      </section>
-      <hr>
+          <div class="min-cost">
+            <h4>от 2000 Р.</h4>
+            <input class="book" type="button" value="Забронировать">
+          </div>
+        </div>
+        <div class="raiting-block">
+          <img src="#" alt="rating">
+          <span class="rating">Рейтинг:8,9</span>
+        </div>
+      </article>
+      <article class="index-block">
+        <div class="photo">
+          <img class="picture" src="http://placehold.it/150x100" width="150" height="100" alt="pic">
+        </div>
+        <div class="name-block">
+          <h2>Villas at Poco Diablo</h2>
+          <div class="type">
+            <h4>Апартаменты</h4>
+            <input class="more" type="button" value="Подробнее">
+          </div>
+          <div class="min-cost">
+            <h4>от 4000 Р.</h4>
+            <input class="book" type="button" value="Забронировать">
+          </div>
+        </div>
+        <div class="raiting-block">
+          <img src="#" alt="rating">
+          <span class="rating">Рейтинг:9,2</span>
+        </div>
+      </article>
         <footer>
           <div class="hash">
             <a href="#">#visitsedona</a>
@@ -119,7 +129,7 @@
             <a class="btn btn-yt" href="#"><img src="#" alt="youtube"></a>
           </div>
           <div class="made-by">
-            <span>Webssite by</span>
+            <span>Website by</span>
             <a href="#"><img src="#" alt="html academy"></a>
           </div>
         </footer>
