@@ -3,39 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <section class="whole-content">
+    <main>
       <header>
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a class="logo" href="#"><img src="img/nav-logo.png" width="137" height="70" alt="home"></a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li><!--
+          --><li><a href="#">Фото и видео</a></li><!--
+          --><li><a href="index.html"><img src="img/nav-logo.png" width="137" height="70" alt="home"></a></li><!--
+          --><li><a href="#">Карта штата</a></li><!--
+          --><li><a href="sedona-inner.html">Гостиницы</a></li>
         </ul>
       </header>
       <section class="head-pic">
-          <img src="img/sedona-text.png" width="458" height="352" alt="sedona">
+        <img src="img/sedona-text.png" width="458" height="352" alt="">
+        <div class="layer">
+          <img src="img/layer-main-picture.png" width="1200" height="57" alt="">
+        </div>
       </section>
       <section class="head-caption">
         <h2>
-          Седона - небольшой городок в аризоне, <br>
+          Седона &mdash; небольшой городок в аризоне, <br>
           заслуживающий большего! <br>
         </h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="real-town">
         <div class="box box-blue">
-            <h2>Настоящий городок</h2>
+            <h2>Настоящий<br>городок</h2>
             <span>&ndash; №1 &ndash;</span>
             <p>
               Седона - не аттракцион для туристов, <br>
               там течет своя жизнь
             </p>
-        </div>
-        <div class="box box-wide">
+        </div><!--
+        --><div class="box-wide">
           <img src="img/town-picture.jpg" width="800" height="256" alt="pic">
         </div>
       </section>
@@ -47,16 +51,16 @@
               Рекомендуем пожить в настоящем <br>
               мотеле, все как в кино!
             </p>
-        </div>
-        <div class="box box-white">
+        </div><!--
+        --><div class="box box-white">
             <img src="img/icon-burger.png" width="74" height="70" alt="pic">
             <h2>Еда</h2>
             <p>
               Всегда заказывайте фирменный бургер, <br>
               вы не разочаруетесь!
             </p>
-        </div>
-        <div class="box box-white">
+        </div><!--
+        --><div class="box box-white">
             <img src="img/icon-gift.png" width="64" height="76" alt="pic">
             <h2>Сувениры</h2>
             <p>
@@ -66,10 +70,10 @@
         </div>
       </section>
       <section class="devil-bridge">
-        <div class="box box-wide">
+        <div class="box-wide">
           <img src="img/devil-bridge.jpg" width="800" height="256" alt="pic">
-        </div>
-        <div class="box box-blue">
+        </div><!--
+        --><div class="box box-blue">
             <h2>Там есть <br>мост дьявола</h2>
             <span>&ndash; №2 &ndash;</span><br>
             <p>
@@ -86,17 +90,17 @@
               Все достопримечательности <br>
               находятся очень близко
             </p>
-        </div>
-        <div class="box box-grey">
+        </div><!--
+        --><div class="box box-grey">
             <h2>Красивая <br>дорога</h2>
             <span>&ndash; №4 &ndash;</span><br>
             <p>
               Ехать в Седону из Лас-Вегаса совсем <br>
               не скучно!
             </p>
-        </div>
-        <div class="box box-grey">
-            <h2>Мало <br>Туристов</h2> <br>
+        </div><!--
+        --><div class="box box-grey">
+            <h2>Мало <br>Туристов</h2>
             <span>&ndash; №5 &ndash;</span>
             <p>
               Большинство едет в Гранд Каньон и <br>
@@ -111,22 +115,22 @@
             Укажите предпологаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="#">Поиск гостиницы в Седоне</a>
+          <a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
           <form class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
             <div class="body-form">
               <label for="come-in">Дата заезда:
-                <input type="text" name="date-in" id="come-in">
+                <input type="text" name="date-in" size="35" id="come-in">
               </label>
               <label for="come-out">Дата выезда:
-                <input type="text" name="date-out" id="come-out">
+                <input type="text" name="date-out" size="35" id="come-out">
               </label>
               <label for="adults">Взрослые:</label>
                 <input type="button" value="-">
-                <input type="text" name="adults" id="adults">
+                <input type="text" name="adults" size="1" id="adults">
                 <input type="button" value="+">
               <label for="childs">Дети:</label>
                 <input type="button" value="-">
-                <input type="text" name="childs" id="childs">
+                <input type="text" name="childs" size="1" id="childs">
                 <input type="button" value="+">
             </div>
             <div class="bottom-form">
@@ -136,7 +140,7 @@
         </div>
       </section>
       <section class="map">
-        <iframe width="1200" height="564" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7785.757369518063!2d-111.76400148179546!3d34.868292753181926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1453692109517">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680873.8007030621!2d-112.18170003579067!3d34.84543763876326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454264064313" frameborder="0" allowfullscreen></iframe>
         </iframe>
       </section>
         <footer>
@@ -153,6 +157,6 @@
             <a href="#"><img src="img/logo-academy.png" width="113" height="39" alt="html academy"></a>
           </div>
         </footer>
-    </section>
+    </main>
   </body>
 </html>

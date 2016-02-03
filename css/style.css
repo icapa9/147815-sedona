@@ -1,7 +1,9 @@
+
 body {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  text-transform: uppercase;
   font-weight: normal;
   font-family: "PT Sans", sans-serif;
 }
@@ -15,4 +17,188 @@ h2 {
   font-size: 21px;
   color: #000000;
   font-weight: bold;
+}
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 56px;
+}
+ul{
+  margin: 0px;
+  padding: 0;
+  list-style-type: none;
+}
+header li {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 16px;
+  padding-bottom: 21px;
+  width: 240px;
+  text-align: center;
+}
+header li:nth-child(3) {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.head-pic {
+  width: 1200px;
+  height: 432px;
+  padding-top: 76px;
+  background: url("../img/main-picture.jpg") no-repeat;
+  background-size: cover;
+}
+.head-pic > img {
+  display: block;
+  margin: 0 auto;
+  width: 458px;
+}
+.layer {
+  margin-top: 23px;
+}
+.head-caption {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 57px;
+}
+.box {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 400px;
+}
+.box-white {
+  padding-top: 60px;
+  padding-bottom: 78px;
+  background-color: white;
+}
+.box-blue {
+  padding-top: 36px;
+  color: white;
+}
+.box-grey {
+  padding-top: 30px;
+  padding-bottom: 57px;
+  background-color: #eeeeee;
+}
+.box-wide {
+  display: inline-block;
+}
+.box-wide img {
+  width: 800px;
+  height: 256px;
+}
+.tips, .benefits  { /* Вырежи это правило, посмотри, не понимаю откуда эти отступы */
+  margin-top: -5px;
+}
+.real-town, .devil-bridge {
+  background-color: #81b3d2;
+}
+.real-town h2,
+.devil-bridge h2,
+.main-block h2 {
+    color: white;
+}
+.interest {
+  padding-top: 35px;
+  text-align: center;
+  background-color:;
+}
+.hotels-search {
+  widht: 568px;
+}
+.body-form {
+  display: none;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-left: 56px;
+  padding-right: 56px;
+  width: 568px;
+  height: 395px;
+  margin: 0 auto;
+}
+.bottom-form {
+  display: none;
+  width: 350px;
+  height: 58px;
+  margin: 0 auto;
+}
+.interest a {
+  display: inline-block;
+  width: 568px;
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #766357;
+}
+.map{
+  height: 593px;
+  background: url("../img/map.jpg")
+}
+.map iframe{
+  border: 0;
+  width: 1200px;
+  height: 100%;
+}
+footer {
+  height: 120px;
+  text-align: center;
+  vertical-align: top;
+}
+.hash {
+  float: left;
+  padding-top: 49px;
+  width: 400px;
+  background-color: white;
+}
+.social-btn {
+  float: left;
+  padding-top: 49px;
+  width: 400px;
+  background-color: white;
+}
+.made-by {
+  float: right;
+  padding-top: 49px;
+  width: 400px;
+  background-color: white;
+}
+
+
+
+
+/*=======================Sedona-inner =====================*/
+.main-form {
+  width: 1200px;
+  min-height: 217px;
+  background: url("../img/filter-background.jpg") no-repeat;
+}
+.structure, .type-accomodation, .range {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 32px;
+}
+.structure {
+  margin-left: 73px;
+}
+.type-accomodation {
+  margin-left: 110px;
+}
+.range {
+  margin-left: 350px;
+}
+.structure label,
+.type-accomodation label {
+  display: block;
+}
+.sort ul {
+  display: inline-block;
+}
+.sort ul li {
+  display: inline-block;
+}
+.triangles ul li {
+  display: inline-block;
 }
