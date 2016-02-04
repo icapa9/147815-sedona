@@ -1,4 +1,3 @@
-
 body {
   font-size: 14px;
   line-height: 21px;
@@ -89,7 +88,7 @@ header li:nth-child(3) {
   width: 800px;
   height: 256px;
 }
-.tips, .benefits  { /* Вырежи это правило, посмотри, не понимаю откуда эти отступы */
+.tips, .benefits  {
   margin-top: -5px;
 }
 .real-town, .devil-bridge {
@@ -134,7 +133,7 @@ header li:nth-child(3) {
 }
 .map{
   height: 593px;
-  background: url("../img/map.jpg")
+  background: url("../img/map.jpg") no-repeat;
 }
 .map iframe{
   border: 0;
@@ -144,25 +143,29 @@ header li:nth-child(3) {
 footer {
   height: 120px;
   text-align: center;
-  vertical-align: top;
+  background-color: white;
 }
-.hash {
+.main-footer {
+  position: absolute;
+  margin-top: -120px;
+}
+.inner-footer {
+  margin-top: -6px;
+}
+.hash, .social-btn {
   float: left;
   padding-top: 49px;
   width: 400px;
-  background-color: white;
-}
-.social-btn {
-  float: left;
-  padding-top: 49px;
-  width: 400px;
-  background-color: white;
 }
 .made-by {
   float: right;
   padding-top: 49px;
   width: 400px;
-  background-color: white;
+}
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
 }
 
 
@@ -172,7 +175,7 @@ footer {
 .main-form {
   width: 1200px;
   min-height: 217px;
-  background: url("../img/filter-background.jpg") no-repeat;
+  background: url("../img/filter-background.jpg");
 }
 .structure, .type-accomodation, .range {
   display: inline-block;
@@ -193,12 +196,67 @@ footer {
 .type-accomodation label {
   display: block;
 }
+.found-form {
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 1056px;
+}
+.found, .sort, .triangles {
+  display: inline-block;
+}
 .sort ul {
   display: inline-block;
 }
-.sort ul li {
-  display: inline-block;
-}
+.sort ul li,
 .triangles ul li {
   display: inline-block;
+}
+.found {
+  width: 165px;
+}
+.sort {
+  width: 780px;
+}
+.triangles {
+  width: 111px;
+  text-align: right;
+}
+.index-block {
+  margin: 0 auto;
+  width: 1056px;
+}
+.index-block:nth-child(3n+2),
+.index-block:nth-child(3n+3) {
+  margin-top: -6px;
+}
+.photo {
+  display: inline-block;
+  text-align: left;
+  width: 165px;
+}
+.photo img {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  width: 135px;
+  height: 90px;
+}
+.name-block {
+  display: inline-block;
+  margin-top: 31px;
+  vertical-align: top;
+  width: 780px;
+}
+.name-block h2 {
+  margin: 0px;
+}
+.type, .min-cost {
+  display: inline-block;
+  margin-top: -10px;
+}
+.raiting-block {
+  display: inline-block;
+  margin-top: 30px;
+  width: 111px;
+  text-align: right;
 }
