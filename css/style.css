@@ -83,6 +83,7 @@ header li:nth-child(3) {
 }
 .box-wide {
   display: inline-block;
+  vertical-align: top;
 }
 .box-wide img {
   width: 800px;
@@ -125,6 +126,7 @@ header li:nth-child(3) {
 }
 .interest a {
   display: inline-block;
+  vertical-align: top;
   width: 568px;
   margin-top: 50px;
   padding-top: 15px;
@@ -133,12 +135,13 @@ header li:nth-child(3) {
 }
 .map{
   height: 593px;
+  width: 1200px;
   background: url("../img/map.jpg") no-repeat;
 }
 .map iframe{
   border: 0;
   width: 1200px;
-  height: 100%;
+  height: 593px;
 }
 footer {
   height: 120px;
@@ -148,6 +151,7 @@ footer {
 .main-footer {
   position: absolute;
   margin-top: -120px;
+  width: inherit;
 }
 .inner-footer {
   margin-top: -6px;
@@ -180,17 +184,23 @@ footer {
 .structure, .type-accomodation, .range {
   display: inline-block;
   vertical-align: top;
-  padding-top: 10px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 .structure {
   margin-left: 73px;
+  width: 240px;
 }
 .type-accomodation {
-  margin-left: 110px;
+  width: 288px;
 }
 .range {
-  margin-left: 350px;
+  width: 328x;
+  padding-left: 200px;
+}
+.range input {
+  display: inline-block;
+  vertical-align: top;
 }
 .structure label,
 .type-accomodation label {
@@ -204,13 +214,16 @@ footer {
 }
 .found, .sort, .triangles {
   display: inline-block;
+  vertical-align: top;
 }
 .sort ul {
   display: inline-block;
+  vertical-align: top;
 }
 .sort ul li,
 .triangles ul li {
   display: inline-block;
+  vertical-align: top;
 }
 .found {
   width: 165px;
@@ -232,6 +245,7 @@ footer {
 }
 .photo {
   display: inline-block;
+  vertical-align: top;
   text-align: left;
   width: 165px;
 }
@@ -243,6 +257,7 @@ footer {
 }
 .name-block {
   display: inline-block;
+  vertical-align: top;
   margin-top: 31px;
   vertical-align: top;
   width: 780px;
@@ -252,10 +267,12 @@ footer {
 }
 .type, .min-cost {
   display: inline-block;
+  vertical-align: top;
   margin-top: -10px;
 }
 .raiting-block {
   display: inline-block;
+  vertical-align: top;
   margin-top: 30px;
   width: 111px;
   text-align: right;
