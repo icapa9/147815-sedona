@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -35,7 +36,7 @@
             <h2>Настоящий<br>городок</h2>
             <span>&mdash; №1 &mdash;</span>
             <p>
-              Седона - не аттракцион для туристов, <br>
+              Седона &mdash; не аттракцион для туристов, <br>
               там течет своя жизнь
             </p>
         </div><!--
@@ -112,49 +113,51 @@
         <div class="main-block">
           <h1>Заинтересовались?</h1>
           <p>
-            Укажите предпологаемые даты поездки, <br>
+            Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
           <form class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
             <div class="body-form">
-              <label for="come-in">Дата заезда:
-                <input type="text" name="date-in" size="35" id="come-in">
-              </label>
+              <button type="button" name="calendar-in"><span class="icon-calendar"></span></button><!--
+              --><label for="come-in">Дата заезда:
+                <input type="text" name="date-in" placeholder="24 апреля 2016" id="come-in"><!--
+              --></label>
+              <button type="button" name="calendar-out"><span class="icon-calendar"></span></button>
               <label for="come-out">Дата выезда:
-                <input type="text" name="date-out" size="35" id="come-out">
-              </label>
-              <label for="adults">Взрослые:</label>
-                <input type="button" value="-">
-                <input type="text" name="adults" size="1" id="adults">
-                <input type="button" value="+">
-              <label for="childs">Дети:</label>
-                <input type="button" value="-">
-                <input type="text" name="childs" size="1" id="childs">
-                <input type="button" value="+">
+                 <input type="text" name="date-out" placeholder="4 июля 2016" id="come-out"><!--
+              --></label>
+              <label for="adults">Взрослые:</label><!--
+              --><button type="button" name="minus-ad"><span class="icon-minus"></span></button><!--
+              --><input type="text" name="adults" id="adults"><!--
+              --><button type="button" name="plus-ad"><span class="icon-plus"></span></button><!--
+            --><label for="childs">Дети:</label><!--
+            --><button type="button" name="minus-ch"><span class="icon-minus"></span></button><!--
+              --><input type="text" name="childs" id="childs"><!--
+              --><button type="button" name="plus-ch"><span class="icon-plus"></span></button>
             </div>
             <div class="bottom-form">
-              <input type="submit" value="Найти">
+              <input class="btn-form" type="submit" value="Найти">
             </div>
           </form>
         </div>
       </section>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680873.8007030621!2d-112.18170003579067!3d34.84543763876326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454264064313" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680873.8007030621!2d-112.18170003579067!3d34.84543763876326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454264064313" frameborder="0" allowfullscreen>
+        </iframe>
       </section>
-        <footer class="main-footer clearfix">
+        <footer class="main-footer">
           <div class="hash">
             <a href="#">#visitsedona</a>
-          </div>
-          <div class="social-btn">
-            <a class="btn" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="btn" href="#"><i class="fa fa-youtube"></i></a>
-          </div>
-          <div class="made-by">
+          </div><!--
+          --><div class="social-btn">
+            <a class="btn" href="#"><span class="icon-twitter"></span></a>
+            <a class="btn" href="#"><span class="icon-facebook"></span></a>
+            <a class="btn" href="#"><span class="icon-youtube"></span></a>
+          </div><!--
+          --><div class="made-by">
             <span>Website by</span>
-            <a href="#"><img src="img/logo-academy.png" width="113" height="39" alt="html academy"></a>
+            <a href="#"><span class="sprite-logo"></span></a>
           </div>
         </footer>
     </main>

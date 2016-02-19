@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,54 +15,83 @@
           --><li><a href="#">Фото и видео</a></li><!--
           --><li><a href="index.html"><img src="img/nav-logo.png" width="137" height="70" alt="home"></a></li><!--
           --><li><a href="#">Карта штата</a></li><!--
-          --><li><a href="sedona-inner.html">Гостиницы</a></li>
+          --><li><a class="active-page" href="sedona-inner.html">Гостиницы</a></li>
         </ul>
       </header>
       <section class="main-form">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <div class="structure">
             <h3>Инфраструктура:</h3>
-            <label><input type="checkbox" name="swimming-pool" checked>Бассейн</label>
-            <label><input type="checkbox" name="parking">Парковка</label>
-            <label><input type="checkbox" name="Wi-Fi">WI-FI</label>
+            <label>
+              <input type="checkbox" name="swimming-pool" checked>
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              Бассейн</label><!--
+            --><label>
+              <input type="checkbox" name="parking">
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              Парковка</label><!--
+            --><label>
+              <input type="checkbox" name="Wi-Fi">
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              WI-FI</label>
           </div><!--
           --><div class="type-accomodation">
             <h3>Тип жилья:</h3>
-            <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-            <label><input type="checkbox" name="motel" checked>Мотель</label>
-            <label><input type="checkbox" name="apart" checked>Аппартаменты</label>
+            <label><input type="checkbox" name="hotel" checked>
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              Гостиница</label><!--
+            --><label><input type="checkbox" name="motel" checked>
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              Мотель</label><!--
+            --><label><input type="checkbox" name="apart" checked>
+              <span class="checkbox-on icon-check-on"></span>
+              <span class="checkbox-off icon-check-off"></span>
+              Апартаменты</label>
           </div><!--
           --><div class="range">
-            <h3>Стоимость в сутки (Р):</h3>
-            <div>
-                <input type="text" name="min-cost" value="От 0">
-                <input type="text" name="max-cost" value="До 3000">
+            <div class="filter-range-title">Стоимость в сутки (р):
             </div>
-            <input type="range" min="0" max="10000">
-            <input type="submit" value="Показать">
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label><!--
+              --><label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </section>
       <section class="found-form">
         <div class="found">
-          <h2>Найдено:3</h2>
+          <h2>Найдено: 3</h2>
         </div><!--
         --><div class="sort">
           <span>Сортировка:</span>
           <ul>
-            <li><a href="#">по цене</a></li>
+            <li><a class="active" href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
         </div><!--
         --><div class="triangles">
           <ul>
-            <li><a href="#">&#9650;</a></li>
-            <li><a href="#">&#9660;</a></li>
+            <li><button type="button" name="arrow-up"><span class="icon-up-dir"></span></button></li><!--
+            --><li><button type="button" name="arrow-down"><span class="icon-down-dir active-arrow"></span></button></li>
           </ul>
         </div>
-      </section>
-      <article class="index-block">
+      </section><!--
+      --><hr size="1" noshade color="#fafafa"><!--
+      --><article class="index-block">
         <div class="photo">
           <img class="picture" src="img/amara-hotel.jpg" width="135" height="90" alt="pic">
         </div><!--
@@ -77,11 +107,15 @@
           </div>
         </div><!--
         --><div class="raiting-block">
-          <i class="rating-stars"></i>
+        <span class="icon-star"></span><!--
+        --><span class="icon-star"></span><!--
+        --><span class="icon-star"></span><!--
+        --><span class="icon-star"></span>
           <span class="rating">Рейтинг: 8,5</span>
         </div>
-      </article>
-      <article class="index-block">
+      </article><!--
+      --><hr size="1" noshade color="#fafafa"><!--
+      --><article class="index-block">
         <div class="photo">
           <img class="picture" src="img/desert-motel.jpg" width="135" height="90" alt="pic">
         </div><!--
@@ -97,11 +131,13 @@
           </div>
         </div><!--
         --><div class="raiting-block">
-          <i class="rating-stars"></i>
+        <span class="icon-star"></span><!--
+        --><span class="icon-star"></span>
           <span class="rating">Рейтинг: 8,9</span>
         </div>
-      </article>
-      <article class="index-block">
+      </article><!--
+      --><hr size="1" noshade color="#fafafa"><!--
+      --><article class="index-block">
         <div class="photo">
           <img class="picture" src="img/villas-apart.jpg" width="135" height="90" alt="pic">
         </div><!--
@@ -117,20 +153,23 @@
           </div>
         </div><!--
         --><div class="raiting-block">
-          <i class="rating-stars"></i>
+          <span class="icon-star"></span><!--
+          --><span class="icon-star"></span><!--
+          --><span class="icon-star"></span>
           <span class="rating">Рейтинг: 9,2</span>
         </div>
-      </article>
-        <footer class="inner-footer clearfix">
+      </article><!--
+      --><hr size="1" noshade color="#fafafa"><!--
+      --><footer class="inner-footer clearfix">
           <div class="hash">
             <a href="#">#visitsedona</a>
-          </div>
-          <div class="social-btn">
-            <a class="btn" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="btn" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="btn" href="#"><i class="fa fa-youtube"></i></a>
-          </div>
-          <div class="made-by">
+          </div><!--
+          --><div class="social-btn">
+            <a class="btn" href="#"><span class="icon-twitter"></span></a>
+            <a class="btn" href="#"><span class="icon-facebook"></span></a>
+            <a class="btn" href="#"><span class="icon-youtube"></span></a>
+          </div><!--
+          --><div class="made-by">
             <span>Website by</span>
             <a href="#"><img src="img/logo-academy.png" width="113" height="39" alt="html academy"></a>
           </div>
