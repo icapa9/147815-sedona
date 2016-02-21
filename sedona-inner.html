@@ -13,22 +13,24 @@
         <ul>
           <li><a href="#">Информация</a></li><!--
           --><li><a href="#">Фото и видео</a></li><!--
-          --><li><a href="index.html"><img src="img/nav-logo.png" width="137" height="70" alt="home"></a></li><!--
           --><li><a href="#">Карта штата</a></li><!--
           --><li><a class="active-page" href="sedona-inner.html">Гостиницы</a></li>
         </ul>
+        <div class="head-logo">
+          <a href="index.html"><img src="img/nav-logo.png" width="138" height="70" alt="home"></a>
+        </div>
       </header>
       <section class="main-form">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <div class="structure">
             <h3>Инфраструктура:</h3>
             <label>
-              <input type="checkbox" name="swimming-pool" checked>
+              <input type="checkbox" name="swimming-pool" checked disabled>
               <span class="checkbox-on icon-check-on"></span>
               <span class="checkbox-off icon-check-off"></span>
               Бассейн</label><!--
             --><label>
-              <input type="checkbox" name="parking">
+              <input type="checkbox" name="parking" disabled>
               <span class="checkbox-on icon-check-on"></span>
               <span class="checkbox-off icon-check-off"></span>
               Парковка</label><!--
@@ -78,14 +80,14 @@
         --><div class="sort">
           <span>Сортировка:</span>
           <ul>
-            <li><a class="active" href="#">по цене</a></li>
+            <li><a class="active-sort" href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
         </div><!--
         --><div class="triangles">
           <ul>
-            <li><button type="button" name="arrow-up"><span class="icon-up-dir"></span></button></li><!--
+            <li><button type="button" name="arrow-up"><span class="icon-up-dir no-active"></span></button></li><!--
             --><li><button type="button" name="arrow-down"><span class="icon-down-dir active-arrow"></span></button></li>
           </ul>
         </div>
@@ -160,7 +162,7 @@
         </div>
       </article><!--
       --><hr size="1" noshade color="#fafafa"><!--
-      --><footer class="inner-footer clearfix">
+      --><footer class="inner-footer">
           <div class="hash">
             <a href="#">#visitsedona</a>
           </div><!--

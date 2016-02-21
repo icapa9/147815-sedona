@@ -85,8 +85,8 @@ header li {
   display: inline-block;
   vertical-align: top;
   padding-top: 14px;
-  padding-bottom: 16px;
-  width: 240px;
+  padding-bottom: 39px;
+  width: 20%;
   text-align: center;
 }
 header a:hover {
@@ -113,16 +113,22 @@ header li:nth-child(2) {
   padding-top: 13px;
 }
 header li:nth-child(3) {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-header li:nth-child(4) {
 padding-left: 1px;
 padding-top: 13px;
+margin-left: 20%;
 }
-header li:nth-child(5) {
+header li:nth-child(4) {
 padding-left: 17px;
 padding-top: 13px;
+}
+.head-logo {
+  left: 50%;
+  top: 0;
+  margin-left: -69px;
+  position: absolute;
+  display: inline-block;
+  vertical-align:top;
+  line-height: 0;
 }
 .head-pic {
   width: 1200px;
@@ -183,10 +189,12 @@ padding-top: 13px;
 .box-blue p {
   padding-top: 6px;
 }
+.benefits {
+  background-color: #eeeeee;
+}
 .box-grey {
   padding-top: 26px;
   padding-bottom: 47px;
-  background-color: #eeeeee;
 }
 .box-grey h2 {
   padding-top: 0px;
@@ -234,11 +242,12 @@ padding-top: 13px;
 
 /* Форма на главной ===================================================*/
 
-
+.hotels-search {
+  position: absolute;
+  left: 50%;
+  margin-left: -284px;
+}
 .body-form {
-  position: relative;
-  text-align: left;
-  left: 316px;
   box-sizing: border-box;
   padding-top: 55px;
   padding-left: 55px;
@@ -246,8 +255,8 @@ padding-top: 13px;
   width: 568px;
   height: 395px;
   font-weight: bold;
+  text-align: left;
   background-color: white;
-  box-shadow: 0 10px 5px 3px #f2f2f2;
 }
 .body-form label {
   display: inline-block;
@@ -265,22 +274,27 @@ padding-top: 13px;
   background-color: #f2f2f2;
   color: #000000;
   border: none;
+  outline: none;
   text-transform: uppercase;
   font-style: inherit;
 }
 .body-form input:hover {
   background-color: #ebebeb;
+  outline: none;
 }
 .body-form input[name="date-in"]:focus,
 .body-form input[name="date-out"]:focus {
   background-color: white;
   border: 2px solid #f5f5f5;
+  outline: none;
 }
 input[name="date-in"] {
   margin-left: 21px;
+  outline: none;
 }
 input[name="date-out"] {
   margin-left: 17px;
+  outline: none;
 }
 input[name="adults"] {
   margin-top: 1px;
@@ -288,11 +302,13 @@ input[name="adults"] {
   margin-right: 53px;
   width: 114px;
   padding: 0 38px;
+  outline: none;
 }
 input[name="childs"] {
   margin-left: 26px;
   width: 114px;
   padding: 0 38px;
+  outline: none;
 }
 .body-form button {
   position: absolute;
@@ -345,7 +361,7 @@ button:active .icon-plus {
 }
 .bottom-form {
   position: absolute;
-  left: 371px;
+  left: 55px;
   width: 458px;
   height: 58px;
   margin: 0 auto;
@@ -356,7 +372,7 @@ button:active .icon-plus {
   display: inline-block;
   vertical-align: top;
   width: 568px;
-  margin-top: 39px;
+  margin-top: 38px;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: #766357;
@@ -420,6 +436,13 @@ footer {
   margin-left: 1px;
   font-size: 21px;
 }
+.inner-footer .hash,
+.inner-footer .made-by {
+  margin-top: 46px;
+}
+.inner-footer .social-btn {
+  margin-top: 33px;
+}
 .social-btn {
   display: inline-block;
   vertical-align: top;
@@ -449,7 +472,6 @@ footer {
   color: #ffffff;
 }
 .icon-youtube {
-
   font-size: 23px;
   color: #ffffff;
 }
@@ -461,8 +483,8 @@ footer {
 .made-by {
   display: inline-block;
   vertical-align: top;
-  padding-top: 49px;
   padding-left: 102px;
+  margin-top: 48px;
   width: 298px;
 }
 .made-by span {
@@ -550,10 +572,18 @@ footer {
 }
 input[type="checkbox"]{
   display: none;
+  outline: none;
 }
 input[type="checkbox"]:checked + .checkbox-on {
   display: inline-block;
   vertical-align: top;
+  outline: none;
+}
+input[type="checkbox"]:checked:disabled + .checkbox-on  {
+  color: #686969;
+}
+input[type="checkbox"]:disabled + .checkbox-on + .checkbox-off {
+  color: #686969;
 }
 .type-accomodation {
   margin-left: 15px;
@@ -596,34 +626,33 @@ input[type="checkbox"]:checked + .checkbox-on {
   vertical-align: top;
   margin-top: -4px;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 22px;
   cursor: pointer;
 }
+
 .price-controls input {
   width: 50px;
   margin: 0;
+  margin-top: 8px;
   color: inherit;
   font: inherit;
   background: none;
   border: none;
   outline: none;
 }
-.price-controls::after {
-  content: "";
-  right: 589px;
-  top: 121px;
-  position: absolute;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
+.min-price input {
+  border-right: 2px solid #ffffff;
+  width: 61px;
+  padding-right: 10px;
 }
 .price-controls .min-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 97px;
+  padding-left: 64px;
 }
 .price-controls .max-price {
-  width: 100px;
-  padding-left: 57px;
+  width: 95px;
+  height: 25px;
+  padding-left: 50px;
 }
 
 .range-controls {
@@ -728,6 +757,17 @@ input[type="checkbox"]:checked + .checkbox-on {
   color: #b5b5b5;
   border-bottom: 1px dotted #81b3d2;
 }
+.sort a:hover {
+  color: #81b3d2;
+}
+.sort a:active {
+  color: #000000;
+  border: none;
+}
+.sort .active-sort {
+  color: #81b3d2;
+  border: none;
+}
 .sort ul li,
 .triangles ul li {
   display: inline-block;
@@ -736,24 +776,14 @@ input[type="checkbox"]:checked + .checkbox-on {
 .sort ul li {
   margin-top: 20px;
 }
-.sort .active {
+.sort .active-arrow {
   color: #81b3d2;
-  border: none;
-}
-.sort a:hover {
-  color: #81b3d2;
-}
-.sort a:active {
-  color: #000000;
   border: none;
 }
 .found {
   width: 165px;
 }
-hr {
-  margin: 0;
-  padding: 0;
-}
+
 .sort {
   width: 780px;
 }
@@ -763,6 +793,9 @@ hr {
 }
 .triangles ul {
   margin-top: 21px;
+}
+.triangles .active-arrow {
+  color: #81b3d2;
 }
 .icon-up-dir,
 .icon-down-dir {
@@ -779,15 +812,10 @@ button[name="arrow-down"] {
   outline: none;
   background: transparent;
 }
-button:hover .icon-up-dir,
-button:hover .icon-down-dir {
+button[name="arrow-up"]:hover .no-active {
   color: #000000;
 }
-button:active .icon-up-dir,
-button:active .icon-down-dir {
-  color: #81b3d2;
-}
-.active-arrow {
+button[name="arrow-up"]:active .no-active {
   color: #81b3d2;
 }
 .index-block {
@@ -801,13 +829,19 @@ button:active .icon-down-dir {
 }
 .type a,
 .min-cost a {
-  padding: 4px 17px;
+  margin-top: -1px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 17px;
   padding-right: 16px;
   color: #ffffff;
 }
 .min-cost a {
+  max-width: 148px;
 }
 .type a {
+  max-width: 110px;
   margin-right: 3px;
   background-color: #81b3d2;
 }
@@ -826,6 +860,10 @@ button:active .icon-down-dir {
 }
 .min-cost a:active {
   background-color: #503e33;
+}
+hr {
+  margin: 0;
+  padding: 0;
 }
 .photo {
   display: inline-block;
