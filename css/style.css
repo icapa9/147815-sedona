@@ -241,11 +241,25 @@ padding-top: 13px;
 
 
 /* Форма на главной ===================================================*/
-
+@keyframes down {
+  0% { transform: translateY(0px); }
+  60% { transform: translateY(20px); }
+  80% { transform: translateY(10px); }
+  90% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
 .hotels-search {
   position: absolute;
   left: 50%;
   margin-left: -284px;
+  display: none;
+}
+.hotels-search-show {
+  display: block;
+  animation: down 0.5s;
+}
+.hotels-search-hide {
+  display: none;
 }
 .body-form {
   box-sizing: border-box;
@@ -303,12 +317,14 @@ input[name="adults"] {
   width: 114px;
   padding: 0 38px;
   outline: none;
+  text-align: center;
 }
 input[name="childs"] {
   margin-left: 26px;
   width: 114px;
   padding: 0 38px;
   outline: none;
+  text-align: center;
 }
 .body-form button {
   position: absolute;
@@ -639,6 +655,7 @@ input[type="checkbox"]:disabled + .checkbox-on + .checkbox-off {
   background: none;
   border: none;
   outline: none;
+  text-align: left;
 }
 .min-price input {
   border-right: 2px solid #ffffff;
